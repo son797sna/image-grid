@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Photo Gallery</title>
+    <style>
+        .row{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap; 
+        }
+        .col{
+            flex: 25%; 
+         }
+        img{
+            width: 99%;
+            margin: 0.5%;
+            padding: 0.5%;
+
+        }
+        .container{
+            width: 40%;
+            overflow: hidden;
+        }
+        .container img:hover{
+            transform: scale(5);
+        }
+        
+
+       @media only screen and (max-width: 599.99px)
+       {
+           .row{
+              display: block;
+            }
+           .col{
+              flex: 100%;
+           }
+       }
+     @media only screen and (min-width: 600px) and (max-width: 967.99px)
+     {
+           .col{
+              flex: 50%;
+           }    
+     } 
+  </style>
+</head>
+<body>
+    
+      <div class="row">
+          <div class="col">
+               <img src="images/Beauty.jpg" alt="">
+               <img src="images/Business-and-Corporate.jpg" alt="">
+               <img src="images/Lifestyle-Adult.jpg" alt="">
+               <img src="images/Concept-and-Ideas.jpg" alt="">
+               <img src="images/Education-and-Learning.jpg" alt="">
+               <img src="images/Food-and-Drink1.jpg" alt="">
+          </div>
+         <div class="col">
+               <img src="images/Fitness.jpg" alt="">
+               <img src="images/Friends.jpg" alt="">
+               <img src="images/Rural-India.jpg" alt="">
+               <img src="images/Nature.jpg" alt="">
+               <img src="images/Lifestyle-Couple1.jpg" alt="">
+          </div>
+          <div class="col">
+               <img src="images/pexels-photo-4348556.webp" alt="">
+               <img src="images/5.jpg" alt="">
+               <img src="images/Lifestyle-Seniors.jpg" alt="">
+               <img src="images/Wedding.jpg" alt="">
+               <img src="images/Healthcare-and-Medical.jpg" alt="">
+               <img src="images/Vacation-and-Holidays.jpg" alt=""> 
+          </div>
+          <div class="col">
+               <img src="images/Festivals-and-Occasions.jpg" alt="">
+               <img src="images/Lifestyle-Families.jpg" alt="">
+               <img src="images/Lifestyle-Children.jpg" alt="">
+               <img src="images/Banking-and-Finance.jpg" alt="">
+               <img src="images/Shopping-and-Retail.jpg" alt="">
+               <img src="images/Lifestyle-Teenagers.jpg" alt="">
+               
+          </div>
+      </div>
+</body>
+</html>
